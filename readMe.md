@@ -10,7 +10,6 @@ I have also attached a sample log file.
 The output format for the query command is as explained in the question. The start time in the time range is inclusive 
 while the endTime is exclusive and the start time should always be strictly greater than the end time.
 
-Total time spent on the Exercise, documentation and the report: 6 to 7 hrs approx  
 ----------------------------------------------------------------------------------------------------------------------------------
 
 The LogGenerator.java takes two command line inputs both of which are optional:
