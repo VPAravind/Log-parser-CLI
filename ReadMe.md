@@ -1,7 +1,9 @@
 # Log Parser command line tool
 
+----------------------------------------------------------------------------------------------------------------------------------
+
 CLI Command:  QUERY IP cpu_id time_start time_end
-Also read: report
+Also read: Report.pdf
 ----------------------------------------------------------------------------------------------------------------------------------
 The project folder contains a report which explains how the three java codes submitted work. 
 
