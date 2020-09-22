@@ -4,6 +4,14 @@
 
 CLI Command:  QUERY IP cpu_id time_start time_end
 Also read: Report.pdf
+
+   The program takes the QUERY command from  the user and finds the CPU usage value for the time range given for the 
+    respective IP Address and CPU ID. The program splits the given large file with logs for 24 hrs into 3 equal part 
+    containing 960,000 logs each. By doing this we can narrow the search down to subset of data. We can then cache the
+    subset of data and find the usage value from the cache.
+    The program takes approximately 1 sec to return the usage values for max range, that is 23 hrs 59 mins.
+    
+#Overview
 ----------------------------------------------------------------------------------------------------------------------------------
 The project folder contains a report which explains how the three java codes submitted work. 
 
@@ -16,6 +24,7 @@ I have also attached a sample log file.
 The output format for the query command is as explained in the question. The start time in the time range is inclusive 
 while the endTime is exclusive and the start time should always be strictly greater than the end time.
 
+#Log Generator
 ----------------------------------------------------------------------------------------------------------------------------------
 
 The LogGenerator.java takes two command line inputs both of which are optional:
@@ -27,6 +36,7 @@ If the both are not a given, logs.txt file is created by default in the root dir
 The logs are recorded by default from 2014-10-31 00:00 to 2014-10-31 23:59. These are values are fixed in the program i.e. hardcoded
 as constants.
 
+#Query Command
 ----------------------------------------------------------------------------------------------------------------------------------
 
 The QueryCommand.java file takes one optional command line input:
